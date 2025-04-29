@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Demon 2</title>
+    <meta name="keywords" content="Level Demon 2,challenging platformer,hardcore game,reflex test,50 levels">
+    <meta name="description" content="Level Demon 2 is an intense platformer with 50 challenging levels that test your reflexes and strategic thinking. Jump, dodge and outsmart deadly traps in this fast-paced game.">
+    <script src="https://geometrydashgames.io/tailwind.js"></script>
+    <link rel="stylesheet" href="https://geometrydashgames.io/main.css">
+    <link rel="stylesheet" href="https://geometrydashgames.io/tailwind.css">
+    <link rel="canonical" href="https://platformergames.io/level-demon-2/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://geometrydashgames.io/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://geometrydashgames.io/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://geometrydashgames.io/img/icon/favicon-16x16.png">
+    <link rel="icon" href="https://geometrydashgames.io/favicon.ico" />
+    <link rel="manifest" href="https://geometrydashgames.io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="https://geometrydashgames.io/js/search.v.0.2.js"></script>
+    <script defer src="https://geometrydashgames.io/js/main.v.0.5.js"></script>
+    <script defer src="https://geometrydashgames.io/gamecontrol_v_0.9.4.1.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8722128765990495" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "r6n0p2u7l4");
+    </script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 text-gray-800 font-sans leading-relaxed">
+    <header class="bg-gradient-to-br from-purple-700 via-indigo-700 to-purple-900 text-white py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center">
+                <div class="logo">
+                    <a href="https://geometrydashgames.io/" aria-label="Geometry Dash Game" class="flex items-center text-xl font-bold">
+                        Geometry Dash Game</a>
+                </div>
+                <ul class="nav-links hidden 2xl:flex flex-1 justify-end space-x-6">
+                    <li><i class="fas fa-cube mr-1"></i><a href="https://geometrydashgames.io" target="_blank"
+                        class="hover:text-yellow-400 transition duration-300" title="Geometry Dash Game">Geometry Dash Game</a></li>
+                    
+                </ul>
+                <!-- PC Search -->
+                <div class="ml-8 xl:mr-4 mr-2 hidden md:block">
+                    <div class="relative">
+                        <input type="text" id="searchInput" placeholder="Search games..." class="h-9 w-[220px] md:w-[300px] rounded-md border border-indigo-300/70 bg-white/90 backdrop-blur-sm px-3 py-1 text-sm shadow-sm transition-colors text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 hover:border-indigo-400">
+                        <svg id="searchIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute right-3 top-2.5 h-4 w-4 text-gray-400 pointer-events-none"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                        <button id="clearSearch" class="hidden absolute right-3 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-indigo-600 transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                        <div id="searchResults" class="hidden absolute z-[999] w-full mt-1 max-h-[400px] overflow-y-auto bg-white rounded-xl shadow-2xl border border-gray-200/60"></div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Search -->
+                <button id="mobileSearchBtn" class="md:hidden ml-auto mr-2 text-white hover:text-yellow-400 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                </button>
+
+                <div class="burger xl:hidden cursor-pointer">
+                    <div class="line1 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                    <div class="line2 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                    <div class="line3 bg-white h-0.5 w-6 my-1 transition duration-300"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Search dialog, not show by default -->
+    <div id="mobileSearchContainer" class="fixed top-[60px] left-0 w-full z-40 bg-indigo-800/95 backdrop-blur-md p-4 shadow-lg transform -translate-y-full transition-transform duration-300 ease-in-out">
+        <div class="relative max-w-[400px] mx-auto">
+            <input type="text" id="mobileSearchInput" placeholder="Search games..." class="h-10 w-[95%] rounded-md border border-indigo-300/70 bg-white/90 backdrop-blur-sm px-3 py-1 text-sm shadow-sm transition-colors text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 hover:border-indigo-400">
+            <svg id="mobileSearchIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute right-8 top-2.5 h-4 w-4 text-gray-400 pointer-events-none"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+            <button id="mobileClearSearch" class="hidden absolute right-8 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-indigo-600 transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <div id="mobileSearchResults" class="hidden absolute z-[999] w-[95%] mt-1 max-h-[400px] overflow-y-auto bg-white rounded-xl shadow-2xl border border-gray-200/60"></div>
+            <button id="closeMobileSearch" class="absolute -right-2 top-1.5 text-white hover:text-yellow-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav fixed top-0 left-0 w-full h-screen bg-indigo-900 z-40 transform -translate-x-full transition duration-300 ease-in-out">
+        <ul class="flex flex-col items-center justify-center h-full space-y-8 text-white text-2xl">
+            <li><i class="fas fa-cube mr-1"></i><a href="https://geometrydashgames.io/geometry-dash-games/" target="_blank" class="hover:text-yellow-400 transition duration-300">Geometry Dash Game</a></li>
+        </ul>
+    </div>
+
+    <main class="pt-14">
+
+        <section id="play-game-now" class="py-2 md:py-4 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- mobile-top -->
+                <!-- Desktop Three Column Layout -->
+                <div class="flex flex-col xl:flex-row gap-4">
+                    <!-- Left Column -->
+                    
+
+                    <!-- Middle Column -->
+                    <div class="flex-1 min-w-0">
+                        <!-- Game Area -->
+                        <div class="bg-white shadow-md rounded-lg mb-4">
+                            <!-- Game Cover Area -->
+                            <div id="mobile-game-cover" class="relative w-full md:h-[75vh] h-[45vh] min-h-[250px] md:min-h-0 overflow-hidden rounded-lg bg-black flex items-center justify-center">
+
+                                <div class="bg-black w-full flex items-center justify-center">
+                                    <div class="flex flex-col items-center w-4/5 max-w-sm">
+                                        <img loading="eager" decoding="async" src="https://s.geometrydashgames.io/games/level-demon-2/level-demon-2.png"
+                                            class="w-full rounded-lg z-10 max-h-[30vh] md:max-h-[40vh] object-contain"
+                                            alt="Level Demon 2 Game Cover" />
+
+                                        <p class="text-2xl sm:text-xl whitespace-nowrap overflow-hidden text-ellipsis font-bold my-4 text-white">Level Demon 2</p>
+
+                                        <button
+                                            class="w-full bg-gradient-to-r from-red-700 to-red-600 hover:from-red-800 hover:to-red-700 text-white font-bold py-3 px-6 rounded-3xl transition-colors play-game">
+                                            <span class="flex items-center justify-center gap-2">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                            Play Game
+                                            </span>
+                                        </button>
+
+                                        <!-- <div class="flex justify-center mt-4 w-full">
+                                            <p class="text-gray-200 text-sm text-center overflow-hidden text-ellipsis">Level Demon 2</p>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="game-container relative w-full md:h-[75vh] h-[45vh] min-h-[250px] md:min-h-0 overflow-hidden rounded-lg hidden">
+                                <iframe id="game-iframe" 
+                                    src="https://s.geometrydashgames.io/games/level-demon-2/level-demon-2.html"
+                                    title="Level Demon 2"
+                                    frameborder="0" 
+                                    class="w-full h-full rounded-lg shadow-2xl"
+                                    loading="lazy"></iframe>
+                                <div id="domain-watermark" class="domain-watermark hidden absolute bottom-4 left-4 text-white text-sm opacity-50">geometrydashgames.io</div>
+                                <button id="fullscreen-btn" class="absolute bottom-4 right-4 bg-indigo-600 bg-opacity-90 text-white border-none py-2 px-4 rounded-lg cursor-pointer text-sm transition duration-300 hover:bg-opacity-100 flex items-center">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button id="exit-fullscreen-btn" class="absolute top-10 right-0 bg-indigo-600 bg-opacity-90 text-white border-none py-2 px-4 rounded-lg cursor-pointer text-sm transition duration-300 hover:bg-opacity-100 flex items-center hidden">
+                                    <i class="fas fa-compress"></i>
+                                </button>
+                            </div>
+
+                            <!-- Game Navigation -->
+                            <div class="flex justify-between items-center py-2">
+                                <div class="flex-1 pr-2">
+                                    
+        <a href="https://geometrydashgames.io/geometry-dash-perpetual-prism/" title="Geometry Dash Perpetual Prism" class="inline-flex items-center gap-2 px-3 py-2 text-sm md:text-base font-medium text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200">
+            <i class="fas fa-chevron-left text-base"></i>
+            <span class="text-base md:text-lg font-bold text-white line-clamp-2 md:line-clamp-1">Geometry Dash Perpetual Prism</span>
+        </a>
+                                </div>
+                                <div class="flex-1 pl-2 text-right">
+                                    
+        <a href="https://geometrydashgames.io/escape-or-die/" title="Escape or Die" class="inline-flex items-center gap-2 px-3 py-2 text-sm md:text-base font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200">
+            <span class="text-base md:text-lg font-bold text-white line-clamp-2 md:line-clamp-1">Escape or Die</span>
+            <i class="fas fa-chevron-right text-base"></i>
+        </a>
+                                </div>
+                            </div>
+                            
+                            <h1 class="hidden md:block text-2xl font-bold py-2 text-indigo-800 px-4">Level Demon 2</h1>
+
+                            <!-- Bottom Ads -->
+                            <!-- <div class="bg-white-500 rounded-lg shadow-sm text-center w-full md:max-w-[650px] 2xl:max-w-[920px] mx-auto mt-2">
+                            </div> -->
+
+                            <!-- Share Buttons -->
+                            <!-- <div id="share" class="flex justify-center space-x-4 p-4">
+                                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;" class="text-white bg-blue-600 hover:bg-blue-700 rounded-lg px-4 py-2 flex items-center transition-colors duration-300">
+                                    <i class="fab fa-facebook-f mr-2"></i>Share
+                                </a>
+                                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('Play Geometry Dash Game!'), 'twitter-share-dialog', 'width=626,height=436'); return false;" class="text-white bg-sky-500 hover:bg-sky-600 rounded-lg px-4 py-2 flex items-center transition-colors duration-300">
+                                    <i class="fab fa-twitter mr-2"></i>Tweet
+                                </a>
+                                <a href="#" onclick="window.open('https://www.reddit.com/submit?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent('Geometry Dash - Create Music with Quirky Characters!'), 'reddit-share-dialog', 'width=626,height=436'); return false;" class="text-white bg-orange-600 hover:bg-orange-700 rounded-lg px-4 py-2 flex items-center transition-colors duration-300">
+                                    <i class="fab fa-reddit-alien mr-2"></i>Reddit
+                                </a>
+                            </div> -->
+                            <div class="flex flex-wrap justify-center items-center gap-4">
+                                <!-- View All Games Button -->
+                                <a href="https://geometrydashgames.io/geometry-dash-games/"
+                                    target="_blank"
+                                    class="m-4 flex-1 group relative inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200 overflow-hidden max-w-xs" 
+                                    aria-label="View all games">
+                                    <span class="relative z-10 flex items-center">
+                                        <i class="fas fa-th mr-2"></i>
+                                        <span class="hidden md:inline">View All Games</span>
+                                        <span class="inline md:hidden">All</span>
+                                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform duration-200"></i>
+                                    </span>
+                                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hot Games Section -->
+                        <div class="mb-4">
+                            <!-- <h2 class="text-2xl font-bold mb-6 text-indigo-800">Hot Geometry Dash Game</h2> -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                
+    <a href="https://geometrydashgames.io/geometry-dash-lite/" class="block bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-200">
+        <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-lite/geometry-dash-lite.png" alt="Geometry Dash Lite" class="w-full h-32 object-cover">
+        <div class="p-4">
+            <p class="text-lg font-semibold text-gray-200">Geometry Dash Lite</p>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-world/" class="block bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-200">
+        <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-world/geometry-dash-world.png" alt="Geometry Dash World" class="w-full h-32 object-cover">
+        <div class="p-4">
+            <p class="text-lg font-semibold text-gray-200">Geometry Dash World</p>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-spam/" class="block bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-200">
+        <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-spam/geometry-dash-spam.png" alt="Geometry Dash Spam" class="w-full h-32 object-cover">
+        <div class="p-4">
+            <p class="text-lg font-semibold text-gray-200">Geometry Dash Spam</p>
+        </div>
+    </a>
+                            </div>
+                        </div>
+
+                        <!-- Top Games Grid -->
+                        <!-- Ads-games-middle -->
+                        <!-- <div class="bg-white-500 rounded-lg shadow-sm text-center w-full md:max-w-[650px] 2xl:max-w-[920px] mx-auto">
+                        </div> -->
+                        <h2 class="text-2xl font-bold mb-4 text-indigo-800">Top Games</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="games-container">
+                            
+    <a href="https://geometrydashgames.io/geometry-dash-a-to-z/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-a-to-z/geometry-dash-a-to-z.png" 
+                     alt="Geometry Dash A to Z" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash A to Z</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-down-unda/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-down-unda/geometry-dash-down-unda.png" 
+                     alt="Geometry Dash Down Unda" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Down Unda</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-auto-clubstep/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-auto-clubstep/geometry-dash-auto-clubstep.png" 
+                     alt="Geometry Dash Auto Clubstep" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Auto Clubstep</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-dorabaebasic10/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-dorabaebasic10/geometry-dash-dorabaebasic10.png" 
+                     alt="Geometry Dash Dorabaebasic10" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Dorabaebasic10</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/goal-rush/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/goal-rush/goal-rush.png" 
+                     alt="Goal Rush" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Goal Rush</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-polar-equals/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-polar-equals/geometry-dash-polar-equals.png" 
+                     alt="Geometry Dash Polar Equals" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Polar Equals</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/flying-gorilla/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/flying-gorilla/flying-gorilla.png" 
+                     alt="Flying Gorilla" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Flying Gorilla</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-out-with-the-old/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-out-with-the-old/geometry-dash-out-with-the-old.png" 
+                     alt="Geometry Dash Out with the Old" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Out with the Old</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-spam-test/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-spam-test/geometry-dash-spam-test.png" 
+                     alt="Geometry Dash Spam Test" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Spam Test</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-spam-challenge/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-spam-challenge/geometry-dash-spam-challenge.png" 
+                     alt="Geometry Dash Spam Challenge" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Spam Challenge</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-wave-spam/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-wave-spam/geometry-dash-wave-spam.png" 
+                     alt="Geometry Dash Wave Spam" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Wave Spam</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-unbroken/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-unbroken/geometry-dash-unbroken.png" 
+                     alt="Geometry Dash Unbroken" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Unbroken</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-skin/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-skin/geometry-dash-skin.png" 
+                     alt="Geometry Dash Skin" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Skin</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-eon-walker/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-eon-walker/geometry-dash-eon-walker.png" 
+                     alt="Geometry Dash Eon Walker" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Eon Walker</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-aperture/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-aperture/geometry-dash-aperture.png" 
+                     alt="Geometry Dash Aperture" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Aperture</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-space-gauntlet/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-space-gauntlet/geometry-dash-space-gauntlet.png" 
+                     alt="Geometry Dash Space Gauntlet" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Space Gauntlet</p>
+            </div>
+        </div>
+    </a>
+                        </div>
+
+                        <!-- Game Operation Buttons Row -->
+                        <div class="flex flex-wrap justify-center items-center gap-4 mt-6">
+                            <!-- Load More Button -->
+                            <!-- <button id="load-more" class="flex-1 group relative inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200 max-w-xs">
+                                <i class="fas fa-gamepad mr-2"></i>
+                                <span class="hidden md:inline">More Top Games</span>
+                                <span class="inline md:hidden">More</span>
+                                <span id="games-counter" class="ml-2">(8/44)</span>
+                                <i class="fas fa-angle-down ml-2 group-hover:translate-y-1 transition-transform duration-200"></i>
+                            </button> -->
+                            
+                            <!-- View All Games Button -->
+                            <a href="https://geometrydashgames.io/geometry-dash-games/"
+                                target="_blank"
+                                class="flex-1 group relative inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200 overflow-hidden max-w-xs" 
+                                aria-label="View all games">
+                                <span class="relative z-10 flex items-center">
+                                    <i class="fas fa-th mr-2"></i>
+                                    <span class="hidden md:inline">View All Games</span>
+                                    <span class="inline md:hidden">All</span>
+                                    <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform duration-200"></i>
+                                </span>
+                                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="w-full xl:w-[346px] flex-shrink-0 mt-4 md:mt-0">
+                        <!-- Right Ads -->
+                        <!-- <div class="bg-white-500 rounded-lg shadow-sm text-center mb-4">
+                        </div> -->
+
+                        <!-- Right Game List -->
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <h2 class="text-xl font-bold mb-4 text-indigo-800 hidden xl:block">Hot Games</h2>
+                            <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-2 gap-4 hidden xl:grid">
+                                
+    <a href="https://geometrydashgames.io/geometry-dash-lite/" class="block bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-200">
+        <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-lite/geometry-dash-lite.png" alt="Geometry Dash Lite" class="w-full h-32 object-cover">
+        <div class="p-4">
+            <p class="text-lg font-semibold text-gray-200">Geometry Dash Lite</p>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-world/" class="block bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-200">
+        <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-world/geometry-dash-world.png" alt="Geometry Dash World" class="w-full h-32 object-cover">
+        <div class="p-4">
+            <p class="text-lg font-semibold text-gray-200">Geometry Dash World</p>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-spam/" class="block bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-200">
+        <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-spam/geometry-dash-spam.png" alt="Geometry Dash Spam" class="w-full h-32 object-cover">
+        <div class="p-4">
+            <p class="text-lg font-semibold text-gray-200">Geometry Dash Spam</p>
+        </div>
+    </a>
+                            </div>
+                            <h2 class="text-xl font-bold mt-12 mb-4 text-indigo-800">Trending Games</h2>
+                            <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-2 gap-4" id="trending-games-container">
+                                
+    <a href="https://geometrydashgames.io/level-demon-2/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/level-demon-2/level-demon-2.png" 
+                     alt="Level Demon 2" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Level Demon 2</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/escape-or-die/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/escape-or-die/escape-or-die.png" 
+                     alt="Escape or Die" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Escape or Die</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-dreamy/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-dreamy/geometry-dash-dreamy.png" 
+                     alt="Geometry Dash Dreamy" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Dreamy</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-discopol/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-discopol/geometry-dash-discopol.png" 
+                     alt="Geometry Dash Discopol" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Discopol</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-blast-processing/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-blast-processing/geometry-dash-blast-processing.png" 
+                     alt="Geometry Dash Blast Processing" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Blast Processing</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-idk/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-idk/geometry-dash-idk.png" 
+                     alt="Geometry Dash IDK" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash IDK</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://geometrydashgames.io/geometry-dash-square-shock/" class="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 block transform transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md group">
+            <div class="relative h-36 min-h-[140px] overflow-hidden">
+                <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/geometry-dash-square-shock/geometry-dash-square-shock.png" 
+                     alt="Geometry Dash Square Shock" 
+                     class="absolute top-0 left-0 w-full h-full object-cover object-center transition-transform duration-500 transform group-hover:scale-110">
+            </div>
+            <div class="p-1.5">
+                <p class="text-sm font-semibold text-indigo-800 text-center transition-colors duration-300 group-hover:text-indigo-600">Geometry Dash Square Shock</p>
+            </div>
+        </div>
+    </a>
+                            </div>
+
+                            <!-- Trending Games Operation Buttons -->
+                            <div class="flex flex-wrap justify-center items-center gap-3 mt-4">
+                                <!-- View All Games Button -->
+                                <a href="https://geometrydashgames.io/geometry-dash-games/"
+                                    target="_blank"
+                                    class="flex-1 group relative inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200 overflow-hidden max-w-[48%]" 
+                                    aria-label="View all games">
+                                    <span class="relative z-10 flex items-center">
+                                        <i class="fas fa-th mr-1"></i>
+                                        <span>All</span>
+                                        <i class="fas fa-arrow-right ml-1 group-hover:translate-x-1 transition-transform duration-200"></i>
+                                    </span>
+                                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Tab Section - Replacing original vertical sections -->
+        <section id="info-tabs" class="py-12 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800">Games Details</h2>
+                
+                <!-- Tab Navigation -->
+                <div class="flex flex-wrap justify-center mb-8 border-b border-gray-200 overflow-x-auto whitespace-nowrap">
+                    <button class="tab-button px-5 py-3 text-lg font-medium border-b-2 border-indigo-600 text-indigo-600 focus:outline-none" 
+                            data-tab="about">About</button>
+                    <button class="tab-button px-5 py-3 text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-indigo-600 hover:border-indigo-600 focus:outline-none" 
+                            data-tab="features">Features</button>
+                    <button class="tab-button px-5 py-3 text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-indigo-600 hover:border-indigo-600 focus:outline-none" 
+                            data-tab="how-to">How to Play</button>
+                    <button class="tab-button px-5 py-3 text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-indigo-600 hover:border-indigo-600 focus:outline-none" 
+                            data-tab="history">History</button>
+                    <button class="tab-button px-5 py-3 text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-indigo-600 hover:border-indigo-600 focus:outline-none" 
+                            data-tab="community">Community</button>
+                    <button class="tab-button px-5 py-3 text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-indigo-600 hover:border-indigo-600 focus:outline-none" 
+                            data-tab="faq">FAQ</button>
+                </div>
+                
+                <!-- Tab Content Area -->
+                <div class="tab-content">
+                    <!-- About Tab Content -->
+                    <div id="about-content" class="tab-pane active">
+                        <div class="py-8">
+                            <h2 id="what_is_loc" class="text-3xl font-bold text-center mb-12 text-indigo-800">What is Level Demon 2?</h2>
+                            <div class="flex flex-col md:flex-row items-center gap-12 mb-12">
+                                <div class="flex-1">
+                                    <img loading="lazy" decoding="async" src="https://s.geometrydashgames.io/games/level-demon-2/level-demon-2.png"
+                                        alt="Level Demon 2"
+                                        class="w-full rounded-2xl shadow-xl">
+                                </div>
+                                <div class="flex-1 space-y-6">
+                                    <p class="text-lg leading-relaxed">Welcome to Level Demon 2 - an adrenaline-pumping platformer that pushes your reflexes and strategic thinking to the limit! With 50 progressively challenging levels, Level Demon 2 offers a perfect blend of speed, precision and puzzle-solving. Each stage in Level Demon 2 is meticulously designed to test your skills with deadly traps and obstacles that require perfect timing to overcome.</p>
+                                </div>
+                            </div>
+                            <div class="prose prose-lg mx-auto space-y-6 text-gray-700">
+                                <p class="text-lg leading-relaxed">Level Demon 2 stands out with its brilliant level design that transforms each stage into a deadly puzzle. The game doesn't just demand quick reflexes - it requires you to analyze patterns, anticipate traps, and plan your moves carefully. Whether you're playing on desktop or mobile, Level Demon 2 delivers smooth, responsive controls that put the challenge squarely on your skills rather than the controls.</p>
+                                <p class="text-lg leading-relaxed">What makes Level Demon 2 particularly rewarding is its perfect difficulty curve. Early levels help you master the basics, while later stages will push your abilities to their absolute limits. Many players find that completing a level in Level Demon 2 feels like solving an intricate puzzle - the satisfaction of finally nailing that perfect run is unmatched in the platformer genre.</p>
+                                <p class="text-lg leading-relaxed">Level Demon 2 has evolved significantly since its initial release. The developers have fine-tuned the difficulty based on player feedback, ensuring that while challenging, every obstacle in Level Demon 2 remains fair and conquerable with practice. Recent updates have added more visual feedback to help players learn from their mistakes.</p>
+                                <p class="text-lg leading-relaxed">As you progress through Level Demon 2, you'll encounter increasingly complex challenges that combine multiple mechanics. From precision jumps to timed dodges and pattern recognition, Level Demon 2 constantly introduces new ways to test your platforming skills. The final levels represent the ultimate test of everything you've learned in Level Demon 2, culminating in an incredibly satisfying finale.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Features Tab Content -->
+                    <div id="features-content" class="tab-pane hidden">
+                        <div class="py-8">
+                            <h2 id="feature_loc" class="text-3xl font-bold text-center mb-12 text-indigo-800">Features of Level Demon 2</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                <div class="bg-white p-6 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-5xl text-indigo-600 mb-6">
+                                        <i class="fas fa-theater-masks"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-4">50 Challenging Levels</h3>
+                                    <p class="text-gray-600">Level Demon 2 offers 50 meticulously designed levels that progressively increase in difficulty. Each stage in Level Demon 2 presents unique challenges that test different aspects of your platforming skills.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-5xl text-indigo-600 mb-6">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-4">Precision Platforming</h3>
+                                    <p class="text-gray-600">Level Demon 2 requires pixel-perfect jumps and split-second timing. The game's tight controls in Level Demon 2 ensure that every success or failure is entirely based on player skill.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-5xl text-indigo-600 mb-6">
+                                        <i class="fas fa-magic"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-4">Strategic Gameplay</h3>
+                                    <p class="text-gray-600">Unlike simple reflex tests, Level Demon 2 demands strategic thinking. Players must analyze patterns and plan routes to successfully navigate the deadly traps in Level Demon 2.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-5xl text-indigo-600 mb-6">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Responsive Controls</h3>
+                                    <p class="text-gray-600">Level Demon 2 features optimized controls that work flawlessly across all devices. Whether using mouse, keyboard or touchscreen, Level Demon 2 provides a seamless gaming experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- How to Play Tab Content -->
+                    <div id="how-to-content" class="tab-pane hidden">
+                        <div class="py-8">
+                            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-800">How to Play Level Demon 2</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-3xl font-bold mb-6 text-indigo-600">1</div>
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Master the Basics</h3>
+                                    <p class="text-gray-700">Start with the early levels of Level Demon 2 to build your fundamental skills. Focus on timing your jumps perfectly before tackling more complex challenges in Level Demon 2.</p>
+                                </div>
+                                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-3xl font-bold mb-6 text-indigo-600">2</div>
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Analyze Patterns</h3>
+                                    <p class="text-gray-700">Success in Level Demon 2 requires recognizing trap patterns. Take time to observe movement sequences in Level Demon 2 before attempting difficult sections.</p>
+                                </div>
+                                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-3xl font-bold mb-6 text-indigo-600">3</div>
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Practice Precision</h3>
+                                    <p class="text-gray-700">Level Demon 2 rewards pixel-perfect execution. Hone your ability to make tiny adjustments mid-jump to navigate the tight spaces in Level Demon 2.</p>
+                                </div>
+                                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-2xl hover:-translate-y-2">
+                                    <div class="text-3xl font-bold mb-6 text-indigo-600">4</div>
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Learn From Mistakes</h3>
+                                    <p class="text-gray-700">Each failure in Level Demon 2 teaches valuable lessons. Pay attention to why you failed and adjust your strategy accordingly in Level Demon 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- History Tab Content -->
+                    <div id="history-content" class="tab-pane hidden">
+                        <div class="py-8">
+                            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-800">The Story Behind Level Demon 2</h2>
+                            <div class="max-w-3xl mx-auto space-y-6">
+                                <p class="text-gray-700">Level Demon 2 was created as a spiritual successor to the original Level Demon, designed to push platforming challenges to new heights. The developers of Level Demon 2 wanted to create a game that balanced extreme difficulty with fair, learnable mechanics.</p>
+                                <p class="text-gray-700">Early versions of Level Demon 2 featured even more punishing difficulty, but player feedback led to refinements that maintained the challenge while making the game more accessible. This evolution of Level Demon 2 shows the developers' commitment to creating the perfect hardcore platformer.</p>
+                                <p class="text-gray-700">The level design philosophy behind Level Demon 2 focuses on 'hard but fair' challenges. Every obstacle in Level Demon 2 can be overcome with practice and precision, making victories feel earned rather than lucky.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Community Tab Content -->
+                    <div id="community-content" class="tab-pane hidden">
+                        <div class="py-8">
+                            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-800">Level Demon 2 Community Vibes</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg">
+                                    <p class="text-gray-700 mb-4">"Level Demon 2 is the ultimate test of platforming skills! The way it combines reflexes with puzzle-solving makes each victory incredibly satisfying. It's ruined other platformers for me because nothing else compares!"</p>
+                                    <p class="text-indigo-600 font-semibold">- DemonSlayer@PlatformerGames</p>
+                                </div>
+                                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg">
+                                    <p class="text-gray-700 mb-4">"What I love about Level Demon 2 is how fair it feels despite being so hard. Every death is clearly your fault, which makes improving so rewarding. After 20 hours I finally beat level 49 - best feeling ever!"</p>
+                                    <p class="text-indigo-600 font-semibold">- Level Demon 2 Fanatic</p>
+                                </div>
+                                <div class="bg-gray-100 p-6 rounded-2xl shadow-lg">
+                                    <p class="text-gray-700 mb-4">"The level design in Level Demon 2 is genius. Each stage teaches you new skills that combine in later levels. It's like the Dark Souls of platformers - punishing but incredibly rewarding."</p>
+                                    <p class="text-indigo-600 font-semibold">- Level Demon 2 Master</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Tab Content -->
+                    <div id="faq-content" class="tab-pane hidden">
+                        <div class="py-8">
+                            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-800">Frequently Asked Questions About Level Demon 2</h2>
+                            <div class="space-y-6 max-w-4xl mx-auto">
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">What is Level Demon 2?</h3>
+                                    <p class="text-gray-700">Level Demon 2 is an intense platformer game featuring 50 challenging levels that test your reflexes, precision and problem-solving skills. It's known for its perfect difficulty curve and rewarding gameplay.</p>
+                                </div>
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">How difficult is Level Demon 2?</h3>
+                                    <p class="text-gray-700">Level Demon 2 is designed to be extremely challenging but fair. The early levels teach core skills while later levels will push even experienced platformer fans to their limits. Many consider Level Demon 2 one of the toughest but most rewarding platformers available.</p>
+                                </div>
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">What devices can play Level Demon 2?</h3>
+                                    <p class="text-gray-700">Level Demon 2 works on all modern devices including desktop computers, laptops, tablets and smartphones. The controls are optimized for each platform to ensure the best possible experience in Level Demon 2.</p>
+                                </div>
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">What makes Level Demon 2 unique?</h3>
+                                    <p class="text-gray-700">Level Demon 2 stands out by combining precise platforming with strategic puzzle elements. Unlike many reflex-based games, Level Demon 2 requires players to analyze patterns and plan their route through each challenging level.</p>
+                                </div>
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">How long does it take to complete Level Demon 2?</h3>
+                                    <p class="text-gray-700">Completion time for Level Demon 2 varies greatly by skill level. Casual players might take weeks to finish all 50 levels, while platforming experts could complete Level Demon 2 in a few days of dedicated play.</p>
+                                </div>
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Are there any tips for beginners?</h3>
+                                    <p class="text-gray-700">New players should approach Level Demon 2 patiently. Focus on learning from each mistake rather than rushing through. The early levels of Level Demon 2 are designed to teach essential skills that become crucial in later stages.</p>
+                                </div>
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Is Level Demon 2 mobile-friendly?</h3>
+                                    <p class="text-gray-700">Yes, Level Demon 2 features touch controls optimized for mobile devices. Many players successfully complete the entire game on smartphones, though some find certain precision jumps easier with a mouse or keyboard.</p>
+                                </div>
+                                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow-md transition duration-300 hover:shadow-xl">
+                                    <h3 class="text-xl font-semibold mb-4 text-indigo-700">Will there be more levels added to Level Demon 2?</h3>
+                                    <p class="text-gray-700">The developers have hinted at possible expansions for Level Demon 2, but the current 50 levels offer dozens of hours of challenging content. Any future additions to Level Demon 2 would likely be as paid DLC.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready to Play Section -->
+        <!-- <section class="bg-gradient-to-r from-indigo-800 to-indigo-900 text-white py-20" id="ready-to-play">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-5xl font-bold mb-6">Start Your Level Demon 2 Challenge Today!</h2>
+                <p class="text-xl mb-10 max-w-2xl mx-auto">Ready to test your platforming skills against one of the most challenging games available? Level Demon 2 offers 50 levels of perfectly crafted challenges that will push your abilities to their limits. Whether you're a casual player looking for a tough but fair challenge or a hardcore platforming fan seeking the ultimate test, Level Demon 2 delivers an unforgettable gaming experience!</p>
+                <a href="#play-game-now"
+                    class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xl py-4 px-10 rounded-full hover:from-yellow-300 hover:to-yellow-400 transition duration-300 inline-block hover:shadow-lg transform hover:-translate-y-1">Play Level Demon 2 Now!</a>
+            </div>
+        </section> -->
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Popular Games Column -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 flex items-center">
+                        <i class="fas fa-gamepad mr-2 text-yellow-400"></i>
+                        Popular Games
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://geometrydashgames.io/geometry-dash-lite/"
+                               target="_blank"
+                               title="Geometry Dash Lite"
+                               class="text-gray-300 hover:text-yellow-400 transition duration-300 flex items-center">
+                               <i class="fas fa-play-cube text-xs mr-2"></i>
+                               Geometry Dash Lite
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://geometrydashgames.io/geometry-dash-world/"
+                               target="_blank"
+                               title="Geometry Dash World"
+                               class="text-gray-300 hover:text-yellow-400 transition duration-300 flex items-center">
+                               <i class="fas fa-play-cube text-xs mr-2"></i>
+                               Geometry Dash World
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links Column -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 flex items-center">
+                        <i class="fas fa-link mr-2 text-yellow-400"></i>
+                        Links
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://github.com/Level-Demon-2"
+                               class="text-gray-300 hover:text-yellow-400 transition duration-300 flex items-center"
+                               target="_blank">
+                               <i class="fab fa-github text-xs mr-2"></i>
+                               <span>Level Demon 2 Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 flex items-center">
+                        <i class="fas fa-shield-alt mr-2 text-yellow-400"></i>
+                        Legal
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://geometrydashgames.io/privacy-policy"
+                               class="text-gray-300 hover:text-yellow-400 transition duration-300 flex items-center"
+                               target="_blank">
+                               <i class="fas fa-user-shield text-xs mr-2"></i>
+                               Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://geometrydashgames.io/terms-of-service"
+                               class="text-gray-300 hover:text-yellow-400 transition duration-300 flex items-center"
+                               target="_blank">
+                               <i class="fas fa-lock text-xs mr-2"></i>
+                               Terms of Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700">
+                <p class="text-center text-gray-400"> 2025 geometrydashgames.io. All rights reserved. Conquer the challenge of Level Demon 2!</p>
+            </div>
+        </div>
+    </footer>
+
+    <div style="display:none">
+        <script defer data-domain="geometrydashgames.io" src="https://app.pageview.app/js/script.js"></script>
+    </div>
+</body>
+</html>
